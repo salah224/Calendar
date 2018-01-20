@@ -9,11 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
-import java.util.Date;
-
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
-    Date date = new Date( );
+
+
+
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //int year, int month, int dayOfMonth
 
-                Toast.makeText( getApplicationContext(), dayOfMonth + "/ " + month + "/ "+ year + "\n " + date.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText( getApplicationContext(), dayOfMonth + "/ " + month+1 + "/ "+ year + "\n " , Toast.LENGTH_LONG).show();
                // Toast.makeText( getApplicationContext(), date.toString(),  Toast.LENGTH_LONG).show();
             }
         } );
